@@ -9,7 +9,7 @@ date_default_timezone_set('UTC');
 $dbhost = 'localhost';
 
 // Database Name
-$dbname = 'ecommerceweb';
+$dbname = 'fanimation';
 
 // Database Username
 $dbuser = 'root';
