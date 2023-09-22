@@ -49,7 +49,7 @@ $statement = $pdo->prepare("SELECT * FROM tbl_payment WHERE payment_status=? AND
 $statement->execute(array('Completed','Pending'));
 $total_order_complete_shipping_pending = $statement->rowCount();
 
-$statement = $pdo->prepare("SELECT * FROM tbl_total_user");
+$statement = $pdo->prepare("SELECT * FROM tbl_website_visitor");
 $statement->execute();
 $total_user = $statement->rowCount();
 ?>

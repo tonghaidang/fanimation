@@ -19,7 +19,7 @@
 			</thead>
             <tbody>
             	<?php
-            	$statement = $pdo->prepare("SELECT * FROM tbl_total_user");
+            	$statement = $pdo->prepare("SELECT * FROM tbl_website_visitor");
             	$statement->execute();
             	$result = $statement->fetchAll(PDO::FETCH_ASSOC);
             	foreach ($result as $row) {

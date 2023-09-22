@@ -9,7 +9,7 @@ date_default_timezone_set('UTC');
 $dbhost = 'localhost';
 
 // Database Name
-$dbname = 'fanimation';
+$dbname = 'test222';
 
 // Database Username
 $dbuser = 'root';
@@ -29,7 +29,6 @@ try {
 	$pdo = new PDO("mysql:host={$dbhost};dbname={$dbname}", $dbuser, $dbpass);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	if (!isset($_SESSION['visited'])) {
-        // Gán session 'visited'
         $_SESSION['visited'] = true;
 
         $ipAddress = $_SERVER['REMOTE_ADDR'];

@@ -180,8 +180,8 @@ if(!isset($_SESSION['user'])) {
 			          </a>
 			        </li>
 
-					<li class="treeview <?php if( ($cur_page == 'total-user.php')||($cur_page == 'total-user.php') ) {echo 'active';} ?>">
-			          <a href="total-user.php">
+					<li class="treeview <?php if( ($cur_page == 'website-visitor.php')||($cur_page == 'website-visitor.php') ) {echo 'active';} ?>">
+			          <a href="website-visitor.php">
 					  <i class="fa fa-user"></i> <span>Website visitor</span>
 			          </a>
 			        </li>
