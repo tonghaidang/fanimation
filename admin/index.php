@@ -48,6 +48,10 @@ $total_order_pending = $statement->rowCount();
 $statement = $pdo->prepare("SELECT * FROM tbl_payment WHERE payment_status=? AND shipping_status=?");
 $statement->execute(array('Completed','Pending'));
 $total_order_complete_shipping_pending = $statement->rowCount();
+
+$statement = $pdo->prepare("SELECT * FROM tbl_total_user");
+$statement->execute();
+$total_user = $statement->rowCount();
 ?>
 
 <section class="content">
@@ -213,6 +217,21 @@ $total_order_complete_shipping_pending = $statement->rowCount();
 				  </div>
 				  <div class="icon">
 					<i class="ionicons ion-arrow-down-b"></i>
+				  </div>
+				  
+				</div>
+			  </div>
+
+			  <div class="col-lg-3 col-xs-6">
+				<!-- small box -->
+				<div class="small-box bg-purple">
+				  <div class="inner">
+					<h3><?php echo $total_user; ?></h3>
+  
+					<p>Website visitor</p>
+				  </div>
+				  <div class="icon">
+					<i class="ionicons ion-ios-people"></i>
 				  </div>
 				  
 				</div>

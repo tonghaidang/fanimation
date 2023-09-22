@@ -108,6 +108,13 @@ if(isset($_POST['form1'])) {
                         }
 
                         $i=0;
+                        foreach($_SESSION['cart_size_id'] as $key => $value) 
+                        {
+                            $i++;
+                            $arr_cart_size_id[$i] = $value;
+                        }
+
+                        $i=0;
                         foreach($_SESSION['cart_size_name'] as $key => $value) 
                         {
                             $i++;
@@ -163,7 +170,6 @@ if(isset($_POST['form1'])) {
                                 <img src="assets/uploads/<?php echo $arr_cart_p_featured_photo[$i]; ?>" alt="">
                             </td>
                             <td><?php echo $arr_cart_p_name[$i]; ?></td>
-                            <td><?php echo $arr_cart_size_name[$i]; ?></td>
                             <td><?php echo $arr_cart_color_name[$i]; ?></td>
                             <td><?php echo LANG_VALUE_1; ?><?php echo $arr_cart_p_current_price[$i]; ?></td>
                             <td>
@@ -183,11 +189,7 @@ if(isset($_POST['form1'])) {
                             </td>
                         </tr>
                         <?php endfor; ?>
-                        <tr>
-                            <th colspan="7" class="total-text">Total</th>
-                            <th class="total-amount"><?php echo LANG_VALUE_1; ?><?php echo $table_total_price; ?></th>
-                            <th></th>
-                        </tr>
+                        
                     </table> 
                 </div>
 

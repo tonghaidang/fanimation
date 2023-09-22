@@ -158,7 +158,7 @@ if(isset($_POST['form_add_to_cart'])) {
             $color_id = $_POST['color_id'];
         }
         for($i=1;$i<=count($arr_cart_p_id);$i++) {
-            if( ($arr_cart_p_id[$i]==$_REQUEST['id']) && ($arr_cart_size_id[$i]==$size_id) && ($arr_cart_color_id[$i]==$color_id) ) {
+            if( ($arr_cart_p_id[$i]==$_REQUEST['id']) && ($arr_cart_color_id[$i]==$color_id) ) {
                 $added = 1;
                 break;
             }

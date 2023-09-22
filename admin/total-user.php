@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Total user</h1>
+		<h1>Website visitor</h1>
 	</div>
 </section>
 <section class="content">

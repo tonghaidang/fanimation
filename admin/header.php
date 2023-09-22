@@ -182,14 +182,7 @@ if(!isset($_SESSION['user'])) {
 
 					<li class="treeview <?php if( ($cur_page == 'total-user.php')||($cur_page == 'total-user.php') ) {echo 'active';} ?>">
 			          <a href="total-user.php">
-					  <i class="fa fa-user"></i> <span>Total User: <?php 
-					 	$sql = "SELECT COUNT(*) as total FROM tbl_total_user";
-						 $statement = $pdo->prepare($sql);
-						 $statement->execute();
-						 $result = $statement->fetch(PDO::FETCH_ASSOC);
-						 $totalCount = $result['total'];
-						 echo $totalCount;
-					  ?></span>
+					  <i class="fa fa-user"></i> <span>Website visitor</span>
 			          </a>
 			        </li>
 
