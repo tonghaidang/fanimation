@@ -9,7 +9,7 @@ date_default_timezone_set('UTC');
 $dbhost = 'localhost';
 
 // Database Name
-$dbname = 'test222';
+$dbname = 'fanimation';
 
 // Database Username
 $dbuser = 'root';
@@ -35,7 +35,7 @@ try {
 
         $currentTime = date("Y-m-d H:i:s");
 
-        $sql = "INSERT INTO tbl_total_user (ipAddress, time) VALUES (:ip_address, :visit_time)";
+        $sql = "INSERT INTO tbl_website_visitor (ipAddress, time) VALUES (:ip_address, :visit_time)";
         $statement = $pdo->prepare($sql);
         $statement->bindParam(':ip_address', $ipAddress);
         $statement->bindParam(':visit_time', $currentTime);
